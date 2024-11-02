@@ -1,0 +1,19 @@
+#Definir nombre del workflow
+name: Primer Workflow
+
+#eventos que se ejecutaran
+on:
+  #eventos que se ejecutaran
+  [push]
+
+jobs:
+  #definir el job
+  job1:
+    #definir el runner
+    runs-on: ubuntu-latest
+    #definir el paso que se ejecutara
+    steps:
+      - name: Hola Mundo
+        run: echo "Hola Mundo"
+
+  
